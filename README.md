@@ -8,7 +8,7 @@ Various training data files for Tesseract OCR (version 3.02)
 * `dan_frak/`: Danish written in fraktur script (orthography prior to ca. 1867).
 * `deu_frak/`: German written in fraktur script.
 * `swe_frak/`: Swedish written in fraktur script. The wordlists for Swedish are from 
-Projekt Runeberg, http://runeberg.org/words/
+[Projekt Runeberg](http://runeberg.org/words/)
 * `dan/`: slightly manipulated version of the Danish .traineddata shipped with upstream tesseract
 to not output annoying fi- and fl-ligatures all the time. Since tesseract version 3.02, this 
 has become outdated. If you have this problem, it is a better solution to upgrade tesseract.
