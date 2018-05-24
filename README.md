@@ -15,7 +15,7 @@ has become outdated. If you have this problem, it is a better solution to upgrad
 
 The `*_frak/` directories have a primitive script to compile the data files that only works on
 unix-like machines. If you aren't interested in working on training tesseract yourself, just
-find the *.traineddata that is relevant for your language, save it to your tesseract
+find the `*.traineddata` that is relevant for your language, save it to your tesseract
 installation's data directory and you should be ready for ocr.
 
 ### Additional Fraktur Script `deu_frak_adler`
