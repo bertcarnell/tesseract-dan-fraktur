@@ -22,9 +22,12 @@ mftraining -F font_properties -U unicharset -O deu_frak_adler.unicharset *.tr
 ## create normproto
 cntraining *.tr
 
+# Augment the dictionary data
+Rscript Word_freq_supplement.R
+
 # Dictionary Data
-wordlist2dawg frequency_list deu_frak_adler.freq-dawg deu_frak_adler.unicharset
-wordlist2dawg word_list deu_frak_adler.word-dawg deu_frak_adler.unicharset
+wordlist2dawg frequency_list_aug deu_frak_adler.freq-dawg deu_frak_adler.unicharset
+wordlist2dawg word_list_aug deu_frak_adler.word-dawg deu_frak_adler.unicharset
 wordlist2dawg number deu_frak_adler.number-dawg deu_frak_adler.unicharset
 wordlist2dawg punc deu_frak_adler.punc-dawg deu_frak_adler.unicharset
 

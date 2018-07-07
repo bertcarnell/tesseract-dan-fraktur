@@ -6,6 +6,9 @@ sysinfo <- Sys.info()
 if (tolower(sysinfo["sysname"]) == "windows" && tolower(sysinfo["user"]) == "rob")
 {
   repository <- file.path("C:", "Users", "Rob", "Documents", "Repositories", "tesseract-dan-fraktur")
+} else if (tolower(sysinfo["sysname"]) == "linux" && tolower(sysinfo["user"]) == "pi")
+{
+  repository <- file.path("~", "repositories", "tesseract-dan-fraktur")
 } else
 {
   stop("Repository not recognized")
@@ -19,8 +22,9 @@ Y <- VCorpus(uris, readerControl=list(language="de"))
 tdm <- TermDocumentMatrix(Y, list(removePunctuation = TRUE, tolower=FALSE, removeNumbers=TRUE))
 
 obit_list <- Terms(tdm)
-Encoding(obit_list) <- "UTF-8"
-stopifnot(all(Encoding(obit_list) == "UTF-8"))
+#Encoding(obit_list) <- "UTF-8"
+#obit_list <- enc2utf8(obit_list)
+#stopifnot(all(Encoding(obit_list) == "UTF-8"))
 temp <- numeric(nTerms(tdm))
 temp[tdm$i[tdm$j == 1]] <- tdm$v[tdm$j == 1]
 temp[tdm$i[tdm$j == 2]] <- temp[tdm$i[tdm$j == 2]] + tdm$v[tdm$j == 2]
