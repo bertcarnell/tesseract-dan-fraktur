@@ -5,4 +5,9 @@ pffmtable
 normproto
 inttemp
 deu_frak_adler.unicharset
+deu_frak_adler.freq-dawg
+deu_frak_adler.number-dawg
+deu_frak_adler.punc-dawg
+deu_frak_adler.word-dawg
+deu_frak_adler.traineddata
 
