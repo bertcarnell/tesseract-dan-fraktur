@@ -34,6 +34,10 @@ wordlist2dawg punc deu_frak_adler.punc-dawg deu_frak_adler.unicharset
 # put it all together
 combine_tessdata deu_frak_adler.
 
+# copy to tesseract
+# must use sudo
+cp deu_frak_adler.traineddata /usr/share/tesseract-ocr/tessdata
+
 
 
 
