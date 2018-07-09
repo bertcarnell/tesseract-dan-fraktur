@@ -20,7 +20,7 @@ installation's data directory and you should be ready for ocr.
 
 ### Additional Fraktur Script `deu_frak_adler`
 
-The original deu_frak training data was not sufficiently accurate for parsing the Fraktur in the Reading Adler newspaper.  As a result
-this project aims to create training images, the associated box file, and the best wordlists for parsing obituaries and marriage
-announcements in the Reading Adler.  For more information on the Reading Adler, please see this 
-[site](https://chroniclingamerica.loc.gov/lccn/sn83025908/)
+The original `deu_frak` training data was not sufficiently accurate for parsing the Fraktur script in the Reading Adler newspaper.  
+As a result, this project aims to create training images, the associated box files, and the best wordlists for parsing obituaries 
+and marriage announcements in the Reading Adler.  For more information on the Reading Adler, please see 
+this [site](https://chroniclingamerica.loc.gov/lccn/sn83025908/)
