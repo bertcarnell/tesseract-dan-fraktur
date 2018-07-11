@@ -5,6 +5,7 @@
 # create the training files .tr
 tesseract deu_frak_adler.unifrakturmaguntia.exp0.tif deu_frak_adler.unifrakturmaguntia.exp0 box.train
 tesseract deu_frak_adler.unifrakturmaguntia.exp1.tif deu_frak_adler.unifrakturmaguntia.exp1 box.train
+tesseract deu_frak_adler.unifrakturmaguntia.exp2.tif deu_frak_adler.unifrakturmaguntia.exp2 box.train
 tesseract Reading_Adler_1798-07-31_[2]_Obituary.tif deu_frak_adler.adlerfont.exp0 box.train
 tesseract Reading_Adler_1800-06-17_[3]_Marriage.tif deu_frak_adler.adlerfont.exp1 box.train
 tesseract Reading_Adler_1804-08-07_[3]_Marriage.tif deu_frak_adler.adlerfont.exp2 box.train
