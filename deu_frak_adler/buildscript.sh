@@ -16,6 +16,8 @@ tesseract Reading_Adler_1876-12-12_[2]_Obituary.tif deu_frak_adler.adlerfont.exp
 
 # create the unicharset file
 unicharset_extractor *.box
+# modify the unicharset file, using the other charsets in langdata (not sure why yet)
+set_unicharset_properties -O unicharset --script_dir=~/repositories/langdata --F font_properties
 
 # training
 ## create shaptetable, inttemp, pffmtable, dan_frak_adler.unicharset
